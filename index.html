@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__logo">
+          <img src="./images/logo.svg" alt="Fylo logo" />
+        </div>
+        <div class="nav__links">
+          <a href="#" class="nav__link">Features</a>
+          <a href="#" class="nav__link">Team</a>
+          <a href="#" class="nav__link">Sign In</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--Hero Section-->
+      <section class="hero">
+        <div class="hero__content">
+          <div class="hero__desc">
+            <h1>All your files in one secure location, accessible anywhere.</h1>
+            <p>
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
+            <div class="get__started">
+              <div class="input_container">
+                <input
+                  type="email"
+                  name="sign_upa"
+                  id="sign_up"
+                  class="email"
+                  placeholder="Enter your email"
+                />
+                <p class="error_A" id="error_A">Please check your email</p>
+              </div>
+              <button
+                type="submit"
+                class="email__btn"
+                id="btnA"
+                onclick="validateEmail_A()"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+          <div class="hero__img">
+            <img
+              src="/images/illustration-1.svg"
+              alt="man, woman and folder illustration"
+            />
+          </div>
+        </div>
+      </section>
+      <!--Marketing Section-->
+      <section class="marketing">
+        <div class="marketing__wrapper">
+          <div class="marketing__container">
+            <div class="marketing__content">
+              <header>
+                <h1>Stay productive, wherever you are</h1>
+              </header>
+              <p>
+                Never let location be an issue when accessing your files. Fylo
+                has you covered for all of your file storage needs.
+                <br />
+                <br />
+                Securely share files and folders with friends, family and
+                colleagues for live collaboration. No email attachments
+                required!  </p>
+                <a href="#" class="marketing__link"
+                  >See how Fylo works
+                  <img
+                    src="./images/icon-arrow.svg"
+                    class="inline_icon"
+                    id="ml1"
+                    alt="icon-arrow"
+                /></a>
+             
+              <div class="testimonial__card">
+                <img
+                  src="./images/icon-quotes.svg"
+                  id="ml2"
+                  class="inline_icon"
+                  alt="icon-quotes"
+                />
+                <div class="testimonial">
+                  Fylo has improved our team productivity by an order of
+                  magnitude. Since making the switch our team has become a
+                  well-oiled collaboration machine.
+                </div>
+
+                <div class="client__profile">
+                  <img
+                    src="./images/avatar-testimonial.jpg"
+                    class="client__avatar"
+                    alt="profile photo of a man"
+                  />
+
+                  <div class="client__details">
+                    <p class="client__name">Kyle Burton</p>
+                    <p>Founder & CEO, Huddle</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="marketing__img">
+              <img
+                src="./images/illustration-2.svg"
+                alt="two men and a woman standing illustration"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Get Early Access -->
+      <section class="access">
+        <div class="access__container">
+          <div class="early_access__content">
+            <h2>Get early access today</h2>
+
+            <p>
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </div>
+          <div class="early_access__cta">
+            <div class="input_container_2">
+              <input
+                type="email"
+                name="early_access"
+                class="access__input"
+                placeholder="email@example.com"
+                id="early_access"
+              />
+              <p class="error_B" id="error_B">Please check your email</p>
+            </div>
+            <button
+              type="submit"
+              class="access__btn"
+              id="btnB"
+              onclick="validateEmail_B()"
+            >
+              Get Started For Free
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Footer Section-->
+    <footer>
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <a href="#"><img src="./images/Group 42.svg" alt="Fylo logo" /></a>
+        </div>
+        <div class="footer__content">
+          <div class="contact__links">
+            <a href="tel:+1-543-123-4567">
+              <span><img src="./images/icon-phone.svg" alt="" /></span> Phone:
+              +1-543-123-4567</a
+            >
+            <a href="mailto: example@fylo.com">
+              <span><img src="./images/icon-email.svg" alt="" /></span>
+              example@fylo.com</a
+            >
+          </div>
+          <div class="fylo_links__a">
+            <a href="#">About Us</a>
+            <a href="#">Jobs</a>
+            <a href="#">Press</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="fylo_links__b">
+            <a href="#">Contact Us</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+          </div>
+
+          <div class="social__links">
+            <a href="#"><img src="/images/Group 43.svg" alt="facebook" /></a>
+            <a href="#"><img src="./images/Group 44.svg" alt="twitter" /></a>
+            <a href="#"><img src="./images/Group 47.svg" alt="instagram" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      let email_A = document.getElementById("sign_up");
+      let email_B = document.getElementById("early_access");
+      let errorMsgA = document.getElementById("error_A");
+      let errorMsgB = document.getElementById("error_B");
+
+      let mailRegex =
+        /^[a-zA-Z][a-zA-Z0-9\-\_\.]+@[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}$/;
+
+      function validateEmail_A() {
+        if (!email_A.value.match(mailRegex)) {
+          email_A.style.border = "1px solid rgb(216, 66, 66)";
+          errorMsgA.style.display = "block";
+        }
+      }
+      function validateEmail_B() {
+        if (!email_B.value.match(mailRegex)) {
+          errorMsgB.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
