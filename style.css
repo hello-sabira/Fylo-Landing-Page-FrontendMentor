@@ -68,7 +68,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 3em auto;
+    margin: 6em auto;
 }
 
 .nav__link {
@@ -81,7 +81,7 @@ nav {
 
 /*------HERO SECTION-------*/
 .hero {
-    margin-bottom: 6em;
+    margin-bottom: 10em;
 }
 .hero__content{
     display: flex;
