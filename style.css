@@ -76,6 +76,7 @@ nav {
     font-size: 1em;
     font-family: var(--secondary-font);
     font-weight: 400;
+    color: var(--very-dark-blue);
 }
 
 /*------HERO SECTION-------*/
