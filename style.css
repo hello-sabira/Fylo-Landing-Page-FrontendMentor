@@ -234,21 +234,23 @@ nav {
 
 .client__profile, .client__details {
     display: flex;
-    align-items: center;
+ 
 }
 .client__profile {
     flex-direction: row;
 }
 .client__details {
     flex-direction: column;
-   
+   margin-left: 1em;
+width: 15rem;
+   align-items: flex-start;
    
 }
 .client__details p {
-    margin: 0 1em;
+    margin: 0;
     line-height: 1;
     font-size: 0.7em;
-
+    padding: 0;
 }
 .client__name {
     margin-bottom: 0.5em !important;
